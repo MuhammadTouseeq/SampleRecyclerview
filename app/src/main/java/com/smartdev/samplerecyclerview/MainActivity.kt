@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(applicationContext)
             setHasFixedSize(true)
             adapter = mAdapter
+
         }
 
         mAdapter?.apply {

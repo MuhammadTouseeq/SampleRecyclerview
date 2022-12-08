@@ -1,5 +1,6 @@
 package com.smartdev.samplerecyclerview
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,12 +43,12 @@ class SampleAdapter : RecyclerView.Adapter<SampleAdapter.DataViewHolder>() {
             bindClickEvent(btnView,model)
         }
 
-
     }
 
 
     fun bindClickEvent(view: View, model: DataModel) {
         view.setOnClickListener {
+
             onItemClickListener(model, it)
         }
     }
